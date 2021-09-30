@@ -1,0 +1,30 @@
+.status-bar {
+  top: 0;
+  width: 100%;
+  /* ↓내가 padding을 줘도, 내 box사이즈를 늘리지 말아줘 */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  position: fixed;
+}
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+.status-bar__column {
+  /* 모든 컬럼이 33%너비 가짐 */
+  width: 33%;
+}
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.status-bar__column:last-child {
+  margin-top: -7px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}

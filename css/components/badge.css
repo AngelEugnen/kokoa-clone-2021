@@ -1,0 +1,39 @@
+.badge {
+  background-color: tomato;
+  /*span은 wid 와 hei가 적용되지 않는다. 따라서 display:block가 필요*/
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: white;
+}
+
+.badge-hole {
+  display: flex;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  font-size: 4px;
+  font-weight: 600;
+  color: tomato;
+  border-radius: 50%;
+  border: 1px solid tomato;
+  margin-left: 150px;
+  margin-top: 1px;
+  justify-content: center;
+}
+
+.badge-small {
+  background-color: tomato;
+  /*span은 wid 와 hei가 적용되지 않는다. 따라서 display:block가 필요*/
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  margin-top: -23px;
+  right: 20px;
+}
